@@ -13,3 +13,11 @@ Momentum - аналог одноимённого приложения интер
 - работа с аудио;
 - сохранение данных в local storage;
 - деление js-кода на модули;
+
+Автор и история
+---------------------------
+
+Задача была выполнена в рамках школы Rsschool.
+
+Автор 
+* [KaterinaKachann  [Frontend developer (HTML, CSS, TS, JS)]](https://github.com/KaterinaKachann)
