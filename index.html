@@ -26,9 +26,8 @@
       </div> -->
 
       <!-- Погода -->
-      <!-- <div class="weather">
+      <div class="weather">
         <input type="text" class="city" id="city" value="" />
-        <i class="weather-icon owf"></i>
         <div class="weather-error"></div>
         <div class="description-container">
           <span class="temperature"></span>
@@ -36,15 +35,15 @@
         </div>
         <div class="wind"></div>
         <div class="humidity"></div>
-      </div> -->
+      </div>
     </header>
 
     <main class="main">
       <!-- Слайдер -->
-      <!-- <div class="slider-icons">
+      <div class="slider-icons">
         <button class="slide-prev slider-icon"></button>
         <button class="slide-next slider-icon"></button>
-      </div> -->
+      </div>
       <!-- Время -->
       <time class="time"></time>
       <div>
@@ -57,7 +56,7 @@
         <span class="greeting"></span>
         <input type="text" class="name" id="name" placeholder="Enter name" />
       </div>
-
+      <!-- Выражения -->
       <button class="change-quote">
         <img src="../assets/svg/reload.svg" />
       </button>
@@ -83,13 +82,13 @@
         </ul>
       </div>
     </footer>
+    <!-- Настройки -->
     <div id="modal-window" class="modal">
       <div class="modal-content">
         <span class="close">&times;</span>
         <h3 class="title-settings">Settings</h3>
         <div class="switch-field">
           <input
-            
             type="radio"
             id="radio-one"
             name="switch-one"
@@ -98,18 +97,25 @@
             checked
           />
           <label for="radio-one" class="text-label">English</label>
-          <input type="radio" id="radio-two" class="change-lang" name="switch-one" value="Russian" />
+          <input
+            type="radio"
+            id="radio-two"
+            class="change-lang"
+            name="switch-one"
+            value="Russian"
+          />
           <label for="radio-two" class="text-label">Russian</label>
         </div>
       </div>
     </div>
     <script src="./js/date.js" defer></script>
-    <!-- <script src="./js/translate.js" defer></script> -->
     <script src="./js/settings.js" defer></script>
     <script src="./js/quotes.js" defer></script>
-
-    <!-- <script src="./js/backgroundImage.js" defer></script>
     <script src="./js/weather.js" defer></script>
+    <script src="./js/slider.js" defer></script>
+
+    <!-- 
+    
     
     <script src="./js/audio.js" defer></script>
     -->
