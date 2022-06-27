@@ -7,9 +7,9 @@ function setBg() {
     const timeOfDay = getDay();
     let bgNum = start.toString().padStart(2, "0");
     const img = new Image();
-    img.src = `https://katerinakachann.github.io/Momentum-Clone/assets/${timeOfDay}/${bgNum}.jpg`;
+    img.src = `https://katerinakachann.github.io/Momentum-Clone/assets/${timeOfDay}/${1}.jpg`;
     img.onload = () => {
-      body.style.backgroundImage = `url(https://katerinakachann.github.io/Momentum-Clone/assets/${timeOfDay}/${bgNum}.jpg)`;
+      body.style.backgroundImage = `url(https://katerinakachann.github.io/Momentum-Clone/assets/${timeOfDay}/${1}.jpg)`;
     };
   }
   setBg();
