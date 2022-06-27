@@ -1,7 +1,7 @@
 const body = document.querySelector("body");
 const slideNext = document.querySelector(".slide-next");
 const slidePrev = document.querySelector(".slide-prev");
-import '../assets/afternoon/1.jpg'
+
 
 function setBg() {
     const timeOfDay = getTimeOfDay();

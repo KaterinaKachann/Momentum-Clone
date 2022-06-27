@@ -3,21 +3,23 @@ const date = document.querySelector(".date");
 const welcome = document.querySelector(".greeting");
 const inputValue = document.querySelector("#name");
 
-let timeValue = new Date();
 
-function setTime() {
-  const currentTime = timeValue.toLocaleTimeString("en-US", { hour12: false });
-  time.textContent = currentTime;
-  setTimeout(setTime, 1000);
-}
+setInterval(function setTime(){
+  const hour = new Date();
+  time.textContent = hour.toLocaleTimeString("en-US", { hour12: false })
+}, 1000);
 
 function setDate() {
+  let dateValue = new Date();
   const options = { weekday: "long", month: "long", day: "numeric" };
-  const currentDate = timeValue.toLocaleDateString("en-US", options);
+  const currentDate = dateValue.toLocaleDateString("en-US", options);
   date.textContent = currentDate;
 }
+setDate();
+
 
 function getDay() {
+  let timeValue = new Date();
   if (6 <= timeValue.getHours() && timeValue.getHours() < 12) {
     return "morning";
   }
@@ -39,5 +41,4 @@ inputValue.addEventListener("blur", function (e) {
 });
 inputValue.value = localStorage.getItem("name");
 
-setTime();
-setDate();
+

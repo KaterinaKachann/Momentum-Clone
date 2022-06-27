@@ -24,13 +24,7 @@
         </div>
         <ul class="play-list"></ul>
       </div> -->
-      <!-- Смена языка -->
-      <!-- <div class="lang">
-        <select class="change-lang">
-          <option value="en" class="choose-lang">en</option>
-          <option value="ru" class="choose-lang">ru</option>
-        </select>
-      </div> -->
+
       <!-- Погода -->
       <!-- <div class="weather">
         <input type="text" class="city" id="city" value="" />
@@ -53,11 +47,17 @@
       </div> -->
       <!-- Время -->
       <time class="time"></time>
-      <date class="date"></date>
-      <div class="greeting-container">
-        <span class="greeting"></span>,
-        <input type="text" class="name" id="name" placeholder="Enter Name" />
+      <div>
+        <date class="date"></date>
+        <button class="settings" id="myBtn">
+          <img src="../assets/svg/settings.svg" />
+        </button>
       </div>
+      <div class="greeting-container">
+        <span class="greeting"></span>
+        <input type="text" class="name" id="name" placeholder="Enter name" />
+      </div>
+
       <!-- Выражения -->
       <!-- <button class="change-quote"></button>
       <div class="quotes">
@@ -82,12 +82,35 @@
         </ul>
       </div>
     </footer>
+    <div id="modal-window" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <h3 class="title-settings">Settings</h3>
+        <div class="switch-field">
+          <input
+            
+            type="radio"
+            id="radio-one"
+            name="switch-one"
+            value="English"
+            class="change-lang"
+            checked
+          />
+          <label for="radio-one" class="text-label">English</label>
+          <input type="radio" id="radio-two" class="change-lang" name="switch-one" value="Russian" />
+          <label for="radio-two" class="text-label">Russian</label>
+        </div>
+      </div>
+    </div>
     <script src="./js/date.js" defer></script>
+    <!-- <script src="./js/translate.js" defer></script> -->
+    <script src="./js/settings.js" defer></script>
+    <!-- <script src="./js/quotes.js" defer></script> -->
 
     <!-- <script src="./js/backgroundImage.js" defer></script>
     <script src="./js/weather.js" defer></script>
-    <script src="./js/quotes.js" defer></script>
+    
     <script src="./js/audio.js" defer></script>
-    <script src="./js/translate.js"></script> -->
+    -->
   </body>
 </html>
