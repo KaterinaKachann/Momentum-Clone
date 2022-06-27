@@ -15,7 +15,7 @@ let greetingTranslation = {
 
 
 
-const changeLang = document.querySelector(".changeLang");
+const changeLang = document.querySelector(".change-lang");
 
 function getSelectValue() {
   const timeOfDay = getTimeOfDay();

@@ -1,9 +1,7 @@
 const time = document.querySelector(".time");
 const date = document.querySelector(".date");
 const welcome = document.querySelector(".greeting");
-const body = document.querySelector("body");
-const slideNext = document.querySelector(".slide-next");
-const slidePrev = document.querySelector(".slide-prev");
+
 
 let start = 1 + Math.floor(Math.random() * 20);
 
@@ -73,38 +71,3 @@ function getLocalStorage() {
 }
 window.addEventListener("load", getLocalStorage);
 
-//Cлайдер изображений
-function setBg() {
-  const timeOfDay = getTimeOfDay();
-  let bgNum = start.toString().padStart(2, "0");
-  const img = new Image();
-  img.src = `https://raw.githubusercontent.com/KaterinaKachann/Momentum-image/assets/assets/${timeOfDay}/${bgNum}.webp`;
-  img.onload = () => {
-    body.style.backgroundImage = `url(https://raw.githubusercontent.com/KaterinaKachann/Momentum-image/assets/assets/${timeOfDay}/${bgNum}.webp)`;
-  };
-}
-setBg();
-
-//Кнопки слайдера
-slideNext.addEventListener("click", function getSlideNext() {
-  if (start <= 21) {
-    start++;
-  }
-  if(start == 21){
-   start = 00;
-   start++;
-  }
-  setBg();
-});
-
-slidePrev.addEventListener("click", function getSlidePrev() {
-  if(start <= 1 && start == 1){
-    start = 21;
-    start--;
-  }
-if(start <= 20){
-  start --
-}
-
-setBg();
-});

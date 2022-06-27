@@ -4,13 +4,14 @@ const playPrev = document.querySelector(".play-prev");
 const play = document.querySelector(".play");
 const playNext = document.querySelector(".play-next");
 const playList = document.querySelector(".play-list");
-const btnControls = document.querySelector('.player-controls');
-const durationTime = document.querySelector('.durationTime');
-const volume = document.querySelector('.volume');
-const progress = document.querySelector('.progress');
-const duration = document.querySelector('.duration');
-const title = document.querySelector('.title');
-const sound = document.querySelector('.sound');
+
+// const btnControls = document.querySelector('.player-controls');
+// const durationTime = document.querySelector('.durationTime');
+// const volume = document.querySelector('.volume');
+// const progress = document.querySelector('.progress');
+// const duration = document.querySelector('.duration');
+// const title = document.querySelector('.title');
+// const sound = document.querySelector('.sound');
 
 
 const audio = new Audio();
