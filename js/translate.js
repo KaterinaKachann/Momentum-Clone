@@ -1,15 +1,15 @@
 let greetingTranslation = {
   ru: {
-    Morning: "Доброе утро",
-    Afternoon: "Добрый день",
-    Evening: "Добрый вечер",
-    Night: "Доброй ночи",
+    morning: "Доброе утро",
+    afternoon: "Добрый день",
+    evening: "Добрый вечер",
+    night: "Доброй ночи",
   },
   en: {
-    Morning: "Good morning",
-    Afternoon: "Good afternoon",
-    Evening: "Good evening",
-    Night: "Good night",
+    morning: "Good morning",
+    afternoon: "Good afternoon",
+    evening: "Good evening",
+    night: "Good night",
   },
 };
 

@@ -6,27 +6,33 @@
     <link href="./assets/favicon.ico" rel="shortcut icon" />
     <link rel="stylesheet" href="./css/owfont-regular.css" />
     <link rel="stylesheet" href="./css/style.css" />
-    <link href="https://fonts.googleapis.com/css2?family=Forum&display=swap" rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Forum&display=swap"
+      rel="stylesheet"
+    />
     <title>Momentum</title>
   </head>
 
   <body>
     <header class="header">
-      <div class="player">
+      <!-- Проигрыватель -->
+      <!-- <div class="player">
         <div class="player-controls">
           <button class="play-prev player-icon"></button>
           <button class="play player-icon"></button>
           <button class="play-next player-icon"></button>
         </div>
         <ul class="play-list"></ul>
-      </div>
-      <div class="lang">
+      </div> -->
+      <!-- Смена языка -->
+      <!-- <div class="lang">
         <select class="change-lang">
           <option value="en" class="choose-lang">en</option>
           <option value="ru" class="choose-lang">ru</option>
         </select>
-      </div>
-      <div class="weather">
+      </div> -->
+      <!-- Погода -->
+      <!-- <div class="weather">
         <input type="text" class="city" id="city" value="" />
         <i class="weather-icon owf"></i>
         <div class="weather-error"></div>
@@ -36,26 +42,31 @@
         </div>
         <div class="wind"></div>
         <div class="humidity"></div>
-      </div>
+      </div> -->
     </header>
+
     <main class="main">
-      <div class="slider-icons">
+      <!-- Слайдер -->
+      <!-- <div class="slider-icons">
         <button class="slide-prev slider-icon"></button>
         <button class="slide-next slider-icon"></button>
-      </div>
+      </div> -->
+      <!-- Время -->
       <time class="time"></time>
       <date class="date"></date>
       <div class="greeting-container">
-        <span class="greeting"></span>
-        <input type="text" class="name" id="enter" />
+        <span class="greeting"></span>,
+        <input type="text" class="name" id="name" placeholder="Enter Name" />
       </div>
-    </main>
-    <footer class="footer">
-      <button class="change-quote"></button>
+      <!-- Выражения -->
+      <!-- <button class="change-quote"></button>
       <div class="quotes">
         <div class="quote"></div>
         <div class="author"></div>
-      </div>
+      </div> -->
+    </main>
+
+    <footer class="footer">
       <div class="contacts">
         <ul class="contacts_list">
           <li class="info_about">
@@ -71,11 +82,12 @@
         </ul>
       </div>
     </footer>
-    <script src="./js/time_date_welcome.js" defer></script>
-    <script src="./js/backgroundImage.js" defer></script>
+    <script src="./js/date.js" defer></script>
+
+    <!-- <script src="./js/backgroundImage.js" defer></script>
     <script src="./js/weather.js" defer></script>
     <script src="./js/quotes.js" defer></script>
     <script src="./js/audio.js" defer></script>
-    <script src="./js/translate.js"></script>
+    <script src="./js/translate.js"></script> -->
   </body>
 </html>
