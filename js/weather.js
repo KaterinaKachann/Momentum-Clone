@@ -41,7 +41,7 @@ async function getWeather() {
     if (response.ok) {
       let data = await response.json();
 
-      temperature.textContent = `${Math.floor(data.main.temp)}°C`;
+      temperature.textContent = `Температура: ${Math.floor(data.main.temp)}°C`;
       windDescription.textContent = `Скорость ветра: ${Math.floor(
         data.wind.speed
       )} м/с`;

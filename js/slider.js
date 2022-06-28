@@ -1,15 +1,28 @@
 const body = document.querySelector("body");
 const slideNext = document.querySelector(".slide-next");
 const slidePrev = document.querySelector(".slide-prev");
-let bgNum = 1;
-function setBg() {
-  const timeOfDay = getDay();
+const githubSelect = document.querySelector(".radio-github");
+const flickerSelect = document.querySelector(".radio-flicker");
+const shuterSelect = document.querySelector(".radio-shuterstock");
+const apiKeyFlicer = "84ff9646e550ec9ed8156ec235f705fd";
 
-  const img = new Image();
-  img.src = `https://katerinakachann.github.io/Momentum-Clone/assets/${timeOfDay}/${bgNum}.jpg`;
-  img.onload = () => {
-    body.style.backgroundImage = `url(https://katerinakachann.github.io/Momentum-Clone/assets/${timeOfDay}/${bgNum}.jpg)`;
-  };
+let bgNum = 1;
+
+async function setBg() {
+  const timeOfDay = getDay();
+  if (githubSelect.checked) {
+    const img = new Image();
+    img.src = `https://katerinakachann.github.io/Momentum-Clone/assets/${timeOfDay}/${bgNum}.jpg`;
+    img.onload = () => {
+      body.style.backgroundImage = `url(https://katerinakachann.github.io/Momentum-Clone/assets/${timeOfDay}/${bgNum}.jpg)`;
+    };
+  }
+  if (flickerSelect.checked) {
+  console.log('flicker')
+  }
+  if (shuterSelect.checked) {
+    console.log("shuter");
+  }
 }
 setBg();
 
@@ -34,3 +47,7 @@ slidePrev.addEventListener("click", function getSlidePrev() {
   }
   setBg();
 });
+
+githubSelect.addEventListener("change", setBg);
+flickerSelect.addEventListener("click", setBg);
+shuterSelect.addEventListener("change", setBg);

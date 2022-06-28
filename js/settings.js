@@ -36,21 +36,28 @@ let btnLangTwo = document.querySelector("#radio-two");
 
 let spanGreeting = document.querySelector(".greeting");
 
-function changeData() {
+function changeLang() {
   let day = new Date();
   const options = { weekday: "long", month: "long", day: "numeric" };
   if (btnLangOne.checked) {
     const currentDate = day.toLocaleDateString("en-US", options);
     date.textContent = currentDate;
     document.querySelector("#name").placeholder = "Enter name";
+    document.querySelector(".title-settings").textContent = "Settings";
+    document.querySelector(".title-language").textContent = "Choose language";
+    document.querySelector(".title-stock").textContent = "Choose stock";
     spanGreeting.textContent = listGreeting.en[getDay()];
   }
   if (btnLangTwo.checked) {
     const currentDate = day.toLocaleDateString("ru", options);
     date.textContent = currentDate;
     document.querySelector("#name").placeholder = "Введите имя";
+    document.querySelector(".title-settings").textContent = "Настройки";
+    document.querySelector(".title-language").textContent = "Выберите язык";
+    document.querySelector(".title-stock").textContent = "Выберите сток";
     spanGreeting.textContent = listGreeting.ru[getDay()];
   }
 }
-btnLangOne.addEventListener("change", changeData);
-btnLangTwo.addEventListener("change", changeData);
+
+btnLangOne.addEventListener("change", changeLang);
+btnLangTwo.addEventListener("change", changeLang);

@@ -3,10 +3,9 @@ const date = document.querySelector(".date");
 const welcome = document.querySelector(".greeting");
 const inputValue = document.querySelector("#name");
 
-
-setInterval(function setTime(){
+setInterval(function setTime() {
   const hour = new Date();
-  time.textContent = hour.toLocaleTimeString("en-US", { hour12: false })
+  time.textContent = hour.toLocaleTimeString("en-US", { hour12: false });
 }, 1000);
 
 function setDate() {
@@ -16,7 +15,6 @@ function setDate() {
   date.textContent = currentDate;
 }
 setDate();
-
 
 function getDay() {
   let timeValue = new Date();
@@ -40,5 +38,3 @@ inputValue.addEventListener("blur", function (e) {
   localStorage.setItem("name", e.target.value);
 });
 inputValue.value = localStorage.getItem("name");
-
-

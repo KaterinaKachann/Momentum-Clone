@@ -20,7 +20,6 @@ body {
   background-blend-mode: multiply;
   transition: background-image 0.5s ease-in-out;
   padding: 10px;
- 
 }
 
 .header {
@@ -37,10 +36,17 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  flex-direction: column;
   width: 120px;
   margin-bottom: 28px;
 }
-
+.player-btn {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  align-items: center;
+}
 .play-list {
   text-align: left;
 }
@@ -115,6 +121,9 @@ body {
 }
 
 .pause {
+  width: 40px;
+  height: 40px;
+  background-size: 40px 40px;
   background-image: url("../assets/svg/pause.svg");
 }
 
@@ -124,6 +133,24 @@ body {
 
 .play-next {
   background-image: url("../assets/svg/play-next.svg");
+}
+.audio-track {
+  width: 150px;
+  height: 3px;
+  background-color: #dddddd;
+  margin: 20px 0;
+}
+
+.time-line {
+  width: 0;
+  height: 3px;
+  background-color: #474747;
+}
+.timer {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-between;
 }
 
 .weather {
@@ -267,7 +294,7 @@ body {
   padding: 20px;
 }
 
-.change-quote img{
+.change-quote img {
   width: 15px;
   height: 15px;
 }
@@ -302,7 +329,6 @@ body {
   }
 
   .greeting-container {
-    min-height: 40px;
     font-size: 32px;
   }
 
@@ -313,6 +339,9 @@ body {
   .name {
     font-size: 32px;
     padding: 5px;
+  }
+  .date {
+    margin-bottom: 40px;
   }
 }
 
@@ -353,12 +382,21 @@ body {
   cursor: pointer;
 }
 
-.title-settings{
+.title-settings {
   color: #000;
-  padding: 20px;
+  font-size: 7vh;
 }
-
-.change-lang {
+.title-language,
+.title-stock{
+  color: #000;
+  margin: 2vh;
+  
+}
+.switch-field {
+  margin-bottom: 20px;
+}
+.change-lang,
+.change-stock {
   position: absolute !important;
   clip: rect(0, 0, 0, 0);
   height: 1px;

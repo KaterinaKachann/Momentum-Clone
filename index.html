@@ -18,9 +18,18 @@
       <!-- Проигрыватель -->
       <div class="player">
         <div class="player-controls">
-          <button class="play-prev player-icon"></button>
-          <button class="play player-icon"></button>
-          <button class="play-next player-icon"></button>
+          <div class="audio-track">
+            <div class="time-line"></div>
+            <div class="timer">
+              <div class="timer-past"></div>
+              <div class="timer-present"></div>
+            </div>
+          </div>
+          <div class="player-btn">
+            <button class="play-prev player-icon"></button>
+            <button class="play player-icon" id="play"></button>
+            <button class="play-next player-icon"></button>
+          </div>
         </div>
         <ul class="play-list"></ul>
       </div>
@@ -49,7 +58,9 @@
       <div>
         <date class="date"></date>
         <button class="settings" id="myBtn">
-          <img src="../assets/svg/settings.svg" />
+          <img
+            src="https://katerinakachann.github.io/Momentum-Clone/assets/svg/settings.svg"
+          />
         </button>
       </div>
       <div class="greeting-container">
@@ -58,7 +69,9 @@
       </div>
       <!-- Выражения -->
       <button class="change-quote">
-        <img src="../assets/svg/reload.svg" />
+        <img
+          src="https://katerinakachann.github.io/Momentum-Clone/assets/svg/reload.svg"
+        />
       </button>
       <div class="quotes">
         <div class="quote"></div>
@@ -87,6 +100,7 @@
       <div class="modal-content">
         <span class="close">&times;</span>
         <h3 class="title-settings">Settings</h3>
+        <h4 class="title-language">Choose language:</h1>
         <div class="switch-field">
           <input
             type="radio"
@@ -105,6 +119,15 @@
             value="Russian"
           />
           <label for="radio-two" class="text-label">Russian</label>
+        </div>
+        <h4 class="title-stock">Choose stock:</h1>
+        <div class="switch-field">
+          <input type="radio" id="radio-three" name="switch-two" value="github" checked class="change-stock radio-github"/>
+          <label for="radio-three" class="text-label">Github</label>
+          <input type="radio" id="radio-four" name="switch-two" value="flicker" class="change-stock radio-flicker"/>
+          <label for="radio-four" class="text-label">Flicker</label>
+          <input type="radio" id="radio-five" name="switch-two" value="shuterstock" class="change-stock radio-shuterstock"/>
+          <label for="radio-five" class="text-label">Shuterstock</label>
         </div>
       </div>
     </div>
