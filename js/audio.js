@@ -80,8 +80,6 @@ function setPlay() {
     audio.src = listSong[count].src;
     audio.play();
     play.classList.add("pause");
-    play.classList.remove("play");
-    timer.textContent = `00:${audioTime}`;
   } else {
     clearInterval(audioPlay);
     audio.pause();
