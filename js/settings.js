@@ -44,8 +44,8 @@ function changeLang() {
     date.textContent = currentDate;
     document.querySelector("#name").placeholder = "Enter name";
     document.querySelector(".title-settings").textContent = "Settings";
-    document.querySelector(".title-language").textContent = "Choose language";
-    document.querySelector(".title-stock").textContent = "Choose stock";
+    document.querySelector(".title-language").textContent = "Choose language:";
+    document.querySelector(".title-stock").textContent = "Choose stock:";
     spanGreeting.textContent = listGreeting.en[getDay()];
   }
   if (btnLangTwo.checked) {
@@ -53,8 +53,8 @@ function changeLang() {
     date.textContent = currentDate;
     document.querySelector("#name").placeholder = "Введите имя";
     document.querySelector(".title-settings").textContent = "Настройки";
-    document.querySelector(".title-language").textContent = "Выберите язык";
-    document.querySelector(".title-stock").textContent = "Выберите сток";
+    document.querySelector(".title-language").textContent = "Выберите язык:";
+    document.querySelector(".title-stock").textContent = "Выберите сток:";
     spanGreeting.textContent = listGreeting.ru[getDay()];
   }
 }
